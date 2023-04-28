@@ -65,6 +65,17 @@ a {
     cursor: pointer;
 }
 
+/* Dấu ba chấm */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2
+}
 
 /* Header */
 .header {
@@ -325,6 +336,7 @@ a {
 }
 
 .popular .course-item {
+    /* display: flex; */
     flex: 1;
     background: #FFFFFF;
     border: 1px solid #E2DFDA;
@@ -339,7 +351,7 @@ a {
 
 .popular .course-item .thumb {
     display: block;
-    width: calc(100% +2px);
+    width: calc(100% + 2px);
     height: 278px;
     object-fit: cover;
     margin: -1px;
@@ -359,6 +371,7 @@ a {
 }
 
 .popular .course-item .title a {
+    padding-right: 6px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;

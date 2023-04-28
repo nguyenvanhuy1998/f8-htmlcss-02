@@ -77,6 +77,11 @@ a {
     --line-clamp: 2
 }
 
+/* Vẫn xuống được dòng khi các chữ không có khoảng trắng */
+.break-all {
+    word-break: break-all;
+}
+
 /* Header */
 .header {
     background: #FFFCF4;
